@@ -20,7 +20,7 @@ The part files are named after the source file and suffixed with `_part_` and th
 ## Example
 Source file `customers.csv` with 14580 records (+ header row) and max records config of `2000`:
 
-`python csv-spitter.py customers.csv 2000`
+`python csv-splitter.py customers.csv 2000`
 
 `8` part files would be created:
 ```
