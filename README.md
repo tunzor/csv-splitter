@@ -11,9 +11,13 @@ This command line app is used to split a `csv` file containing email addresses a
     - Running with source `file1.csv` would remove `file1_part_*` files but not `file2_part_*` files
 
 ## Usage
-Two positional arguments are required: the source file to split and the maximum number of records in the part file.
+Two positional arguments are required: **the source file** to split and the **maximum number of records** in the part file.
 
 `python csv-splitter.py file_name.csv 999`
+
+Optionally a list of keywords can be provided and any email address containing *any* of the keywords will be omitted.
+
+`python csv-splitter.py file_name.csv 999 --omit "google, yahoo, james"`
 
 The part files are named after the source file and suffixed with `_part_` and the part file number.
 
